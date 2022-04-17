@@ -41,7 +41,7 @@ function App() {
           <section>
             Hello, I can get you,
             <a href="https://en.wikipedia.org/wiki/Astronomy_Picture_of_the_Day">
-              NASA's Astrology Picture of The Day
+              NASA's Astronomy Picture of The Day
             </a>
           </section>
           <button onClick={fetchDataHandler}>Render</button>
