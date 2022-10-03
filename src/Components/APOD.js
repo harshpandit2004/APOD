@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Rover.css";
 import Info from "./Info";
 
 function APOD(props) {
@@ -20,19 +19,19 @@ function APOD(props) {
         Picture of the day: {props.title} {<br />}
         {<br />}
         <img src={props.image} alt="Loading..." />
-        
+      </section>
+      <div className="GyanWalaDiv">
         {visibilityHandler === false ? (
           <button onClick={moreInformationHandler}>Learn more</button>
         ) : (
           <button onClick={hideInformationHandler}>Hide Information</button>
         )}
-
         {visibilityHandler === true ? (
           <Info info={information}></Info>
         ) : (
-            <p></p>
+          <></>
         )}
-      </section>
+      </div>
     </div>
   );
 }

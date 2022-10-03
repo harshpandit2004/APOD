@@ -45,7 +45,6 @@ function App() {
             </a>
           </section>
           <button onClick={fetchDataHandler}>Render</button>
-          <h1>Click render to continue</h1>
         </div>
       ) : (
         <div>
