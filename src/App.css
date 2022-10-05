@@ -47,9 +47,10 @@ section {
 a {
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.5s ease 0s;
 }
 a:hover {
-  color: #23004e;
+  color: #a459ff;
   text-decoration: none;
 }
 
@@ -73,10 +74,9 @@ button {
   outline: none;
   margin: 1rem;
 }
-button:after, button:active {
+button:hover, button:after, button:active {
   background-color: #230052;
-  box-shadow: 0px 15px 20px #24005275;
-
+  box-shadow: 0px 15px 20px #240052e1;
   transform: translateY(-7px);
 }
 
@@ -93,12 +93,24 @@ h1 {
 
 /*Media queries*/
 
-@media (max-width: 393px) {
+@media (max-device-width: 510px) {
   section {
     width: 20rem;
+    margin: auto 2rem;
   }
   .GyanWalaDiv {
     height: fit-content;
     width: 20rem;
+    margin: 2rem 2rem;
+  }
+  button:hover{
+    background-color: #230052;
+    box-shadow: 0px 15px 20px #24005275;
+    transform: translateY(0px);
+  }
+  button:after, button:active {
+    background-color: #230052;
+    box-shadow: 0px 15px 20px #240052e1;
+    transform: translateY(-7px);
   }
 }
